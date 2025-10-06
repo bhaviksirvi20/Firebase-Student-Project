@@ -1,0 +1,121 @@
+/* Dark theme body */
+body {
+  background-color: #0d0d0d; /* deeper black */
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Glowing background animation */
+body::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 20% 20%, #00bcd4, #0d0d0d 70%);
+  animation: moveBg 15s linear infinite;
+  z-index: -1;
+  filter: blur(120px);
+}
+
+@keyframes moveBg {
+  0% { transform: translate(0,0) rotate(0deg); }
+  50% { transform: translate(-50%, -50%) rotate(180deg); }
+  100% { transform: translate(0,0) rotate(360deg); }
+}
+
+/* Form container box */
+.form-container {
+  background: #121212;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+  text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  position: relative;
+  width: 350px;
+}
+
+/* Hover animation for form box */
+.form-container:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.9), 0 0 20px #00bcd4;
+}
+
+/* Heading */
+.form-container h2 {
+  margin-bottom: 25px;
+  color: #00e5ff;
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px #00bcd4, 0 0 15px #00e5ff;
+  transition: all 0.3s ease;
+}
+
+/* Input box wrapper */
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Inputs */
+.input-box input {
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+  outline: none;
+  background: #1a1a1a;
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.4s ease;
+  box-shadow: inset 0 0 5px #000;
+}
+
+/* Placeholder */
+.input-box input::placeholder {
+  color: #777777;
+  font-style: italic;
+}
+
+/* Input focus animation */
+.input-box input:focus {
+  border: 1px solid #00bcd4;
+  box-shadow: 0 0 15px #00bcd4;
+  transform: scale(1.03);
+}
+
+/* Button */
+.input-box button {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #00bcd4, #00e5ff);
+  color: #0d0d0d;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 20px rgba(0,188,212,0.5);
+}
+
+/* Button hover animation */
+.input-box button:hover {
+  transform: scale(1.08) rotate(-1deg);
+  box-shadow: 0 8px 25px rgba(0,188,212,0.7), 0 0 15px #00e5ff inset;
+}
+
+/* Unique focus glow effect */
+.input-box input:focus + button {
+  animation: glow 1.2s infinite alternate;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 5px 20px rgba(0,188,212,0.5); }
+  100% { box-shadow: 0 8px 25px rgba(0,255,255,0.8); }
+}
