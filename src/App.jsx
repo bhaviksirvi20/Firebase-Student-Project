@@ -8,6 +8,7 @@ const App = () => {
   let [name, setName] = useState("")
   let [surname, setSurname] = useState("")
   let [age, setAge] = useState("")
+
   let handleAdd = (async () => {
     
     try {
@@ -20,6 +21,7 @@ const App = () => {
           
         });
         console.log("Document written with ID: ", docRef.id);
+        alert("SuccessFully Add your Details...")
       }
       else{
         alert("Please Enter Student Details...!");
