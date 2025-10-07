@@ -1,26 +1,27 @@
-/* 🌙 Dark Theme Body */
+/* 🌙 Dark Futuristic Theme */
 body {
-  background-color: #0d0d0d; /* deeper black */
-  color: #ffffff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #080808;
+  color: #e8e8e8;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
   overflow: hidden;
+  position: relative;
 }
 
-/* 🌈 Glowing Animated Background */
+/* 🌈 Soft Animated Neon Background */
 body::before {
   content: '';
   position: absolute;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at 20% 20%, #8e2de2, #0d0d0d 70%);
-  animation: moveBg 15s linear infinite;
+  background: radial-gradient(circle at 30% 30%, #00d4ff, #080808 70%);
+  animation: moveBg 18s linear infinite;
   z-index: -1;
-  filter: blur(120px);
+  filter: blur(130px);
 }
 
 @keyframes moveBg {
@@ -31,29 +32,29 @@ body::before {
 
 /* 📦 Form Container */
 .form-container {
-  background: #121212;
+  background: rgba(18, 18, 18, 0.95);
   padding: 40px 50px;
   border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+  box-shadow: 0 15px 45px rgba(0, 255, 255, 0.1);
   text-align: center;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  position: relative;
+  transition: all 0.5s ease;
   width: 350px;
+  backdrop-filter: blur(10px);
 }
 
 /* Hover Animation */
 .form-container:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.9), 0 0 20px #8e2de2;
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 50px rgba(0, 255, 255, 0.25), 0 0 30px rgba(0, 255, 255, 0.15);
 }
 
 /* ✨ Heading */
 .form-container h2 {
   margin-bottom: 25px;
-  color: #b86eff;
+  color: #00eaff;
   font-size: 26px;
   letter-spacing: 1px;
-  text-shadow: 0 0 8px #8e2de2, 0 0 15px #4a00e0;
+  text-shadow: 0 0 10px #00eaff, 0 0 20px #007bff;
   transition: all 0.3s ease;
 }
 
@@ -70,8 +71,8 @@ body::before {
   border-radius: 12px;
   border: 1px solid #1f1f1f;
   outline: none;
-  background: #1a1a1a;
-  color: #ffffff;
+  background: #101010;
+  color: #e0e0e0;
   font-size: 16px;
   transition: all 0.4s ease;
   box-shadow: inset 0 0 5px #000;
@@ -79,14 +80,14 @@ body::before {
 
 /* Placeholder */
 .input-box input::placeholder {
-  color: #777777;
+  color: #888;
   font-style: italic;
 }
 
 /* Input Focus Glow */
 .input-box input:focus {
-  border: 1px solid #8e2de2;
-  box-shadow: 0 0 15px #8e2de2;
+  border: 1px solid #00eaff;
+  box-shadow: 0 0 18px #00eaff;
   transform: scale(1.03);
 }
 
@@ -95,19 +96,19 @@ body::before {
   padding: 14px;
   border: none;
   border-radius: 12px;
-  background: linear-gradient(145deg, #8e2de2, #4a00e0);
+  background: linear-gradient(145deg, #00eaff, #007bff);
   color: #ffffff;
   font-weight: bold;
   font-size: 17px;
   cursor: pointer;
   transition: all 0.4s ease;
-  box-shadow: 0 5px 20px rgba(142,45,226,0.5);
+  box-shadow: 0 5px 20px rgba(0, 174, 255, 0.4);
 }
 
 /* Button Hover Glow */
 .input-box button:hover {
-  transform: scale(1.08) rotate(-1deg);
-  box-shadow: 0 8px 25px rgba(142,45,226,0.7), 0 0 15px #4a00e0 inset;
+  transform: scale(1.08);
+  box-shadow: 0 8px 30px rgba(0, 234, 255, 0.7), 0 0 15px #007bff inset;
 }
 
 /* ✨ Unique Focus Glow Effect */
@@ -116,6 +117,128 @@ body::before {
 }
 
 @keyframes glow {
-  0% { box-shadow: 0 5px 20px rgba(142,45,226,0.5); }
-  100% { box-shadow: 0 8px 25px rgba(186,85,255,0.8); }
+  0% { box-shadow: 0 5px 20px rgba(0, 234, 255, 0.5); }
+  100% { box-shadow: 0 8px 25px rgba(0, 174, 255, 0.8); }
+}
+/* 🌙 Dark Futuristic Theme */
+body {
+  background-color: #080808;
+  color: #e8e8e8;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 🌈 Soft Animated Neon Background */
+body::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, #00d4ff, #080808 70%);
+  animation: moveBg 18s linear infinite;
+  z-index: -1;
+  filter: blur(130px);
+}
+
+@keyframes moveBg {
+  0% { transform: translate(0,0) rotate(0deg); }
+  50% { transform: translate(-50%, -50%) rotate(180deg); }
+  100% { transform: translate(0,0) rotate(360deg); }
+}
+
+/* 📦 Form Container */
+.form-container {
+  background: rgba(18, 18, 18, 0.95);
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 15px 45px rgba(0, 255, 255, 0.1);
+  text-align: center;
+  transition: all 0.5s ease;
+  width: 350px;
+  backdrop-filter: blur(10px);
+}
+
+/* Hover Animation */
+.form-container:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 50px rgba(0, 255, 255, 0.25), 0 0 30px rgba(0, 255, 255, 0.15);
+}
+
+/* ✨ Heading */
+.form-container h2 {
+  margin-bottom: 25px;
+  color: #00eaff;
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px #00eaff, 0 0 20px #007bff;
+  transition: all 0.3s ease;
+}
+
+/* 🧩 Input Box Wrapper */
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* 🔘 Input Fields */
+.input-box input {
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+  outline: none;
+  background: #101010;
+  color: #e0e0e0;
+  font-size: 16px;
+  transition: all 0.4s ease;
+  box-shadow: inset 0 0 5px #000;
+}
+
+/* Placeholder */
+.input-box input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+/* Input Focus Glow */
+.input-box input:focus {
+  border: 1px solid #00eaff;
+  box-shadow: 0 0 18px #00eaff;
+  transform: scale(1.03);
+}
+
+/* 🚀 Button */
+.input-box button {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #00eaff, #007bff);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 20px rgba(0, 174, 255, 0.4);
+}
+
+/* Button Hover Glow */
+.input-box button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 30px rgba(0, 234, 255, 0.7), 0 0 15px #007bff inset;
+}
+
+/* ✨ Unique Focus Glow Effect */
+.input-box input:focus + button {
+  animation: glow 1.2s infinite alternate;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 5px 20px rgba(0, 234, 255, 0.5); }
+  100% { box-shadow: 0 8px 25px rgba(0, 174, 255, 0.8); }
 }
