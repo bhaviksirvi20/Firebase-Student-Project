@@ -1,16 +1,28 @@
-# React + Vite
+# 🧑‍🎓 Firebase Student Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and modern web app built with **React + Vite** and **Firebase**, where users can **add, view, and manage student details** such as *Name*, *Surname*, and *Age*.  
+Deployed live on **Vercel** 🚀
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [firebase-student-project.vercel.app](https://firebase-student-project.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ⚙️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚛️ **React + Vite** — Fast frontend setup with Hot Module Replacement (HMR)  
+- 🔥 **Firebase** — Used for real-time database and hosting backend data  
+- 🎨 **CSS / Tailwind (if used)** — For responsive UI styling  
+- 🌐 **Vercel** — Deployment platform for live hosting  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧩 Features
+
+✅ Add new student details (Name, Surname, Age)  
+✅ View all stored students in real-time from Firebase  
+✅ Delete or update existing student entries (if implemented)  
+✅ Fully responsive UI for both desktop & mobile  
+✅ Fast and optimized build using Vite  
+
+---
+
